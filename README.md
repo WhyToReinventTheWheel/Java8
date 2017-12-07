@@ -1,4 +1,5 @@
 https://www.tutorialspoint.com/java8/
+Study Notes
 
 	* Lambda expression	− Adds functional processing capability to Java.
 	* Method references	− Referencing functions by their names instead of invoking them directly.Using functions as parameter.
@@ -127,5 +128,13 @@ Optional Class
 	represent null with absent value. This class has various utility methods to facilitate code to 
 	handle values as ‘available’ or ‘not available’ instead of checking null values.
 	
+	Integer value1 = null;
+	Integer value2 = new Integer(10);
+
+	//Optional.ofNullable - allows passed parameter to be null.
+	Optional<Integer> a = Optional.ofNullable(value1);
+
+	//Optional.of - throws NullPointerException if passed parameter is null
+	Optional<Integer> b = Optional.of(value2);
 	
 	
