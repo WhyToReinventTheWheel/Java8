@@ -12,6 +12,7 @@ https://www.tutorialspoint.com/java8/
 	
 
 Lambda expression
+	
 	public class Greeter {
 		public void greet(Greeting greeting) {
 			greeting.perform();
@@ -36,9 +37,9 @@ Lambda expression
 	
 Method Reference 
 
-	Static methods
-	Instance methods
-	Constructors using new operator (TreeSet::new)
+	* Static methods
+	* Instance methods
+	* Constructors using new operator (TreeSet::new)
 		
 	public class MethodReference {
 		public static void main(String args[]) {
@@ -97,32 +98,33 @@ What is Stream?
 	Following are the characteristics of a Stream −
 	Sequence of elements − A stream provides a set of elements of specific type in a sequential manner. A stream gets/computes elements on demand. It never stores the elements.
 
-	Source − Stream takes Collections, Arrays, or I/O resources as input source.
+	* Source − Stream takes Collections, Arrays, or I/O resources as input source.
 
-	Aggregate operations − Stream supports aggregate operations like filter, map, 
+	* Aggregate operations − Stream supports aggregate operations like filter, map, 
 		limit, reduce, find, match, and so on.
 
-	Pipelining − Most of the stream operations return stream itself so that their 
+	* Pipelining − Most of the stream operations return stream itself so that their 
 		result can be pipelined. These operations are called intermediate operations and their 
 		function is to take input, process them, and return output to the target. collect() 
 		method is a terminal operation which is normally present at the end of the pipelining 
 		operation to mark the end of the stream.
 
-	Automatic iterations − Stream operations do the iterations internally over the source elements 
+	* Automatic iterations − Stream operations do the iterations internally over the source elements 
 		provided, in contrast to Collections where explicit iteration is required.
 		
 	
 	Generating Streams
 	
-	stream() − Returns a sequential stream considering collection as its source.
-	parallelStream() − Returns a parallel Stream considering collection as its source.
-	
-	List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd", "", "jkl");
-	long count = strings.stream().filter(string -> string.length() == 3).count();
-	List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
-	long count = strings.parallelStream().filter(string -> string.isEmpty()).count();
+		stream() − Returns a sequential stream considering collection as its source.
+		parallelStream() − Returns a parallel Stream considering collection as its source.
+		
+		List<String> strings = Arrays.asList("abc", "", "bc", "efg", "abcd", "", "jkl");
+		long count = strings.stream().filter(string -> string.length() == 3).count();
+		List<String> filtered = strings.stream().filter(string -> !string.isEmpty()).collect(Collectors.toList());
+		long count = strings.parallelStream().filter(string -> string.isEmpty()).count();
 	
 Optional Class
+	
 	Optional is a container object used to contain not-null objects. Optional object is used to 
 	represent null with absent value. This class has various utility methods to facilitate code to 
 	handle values as ‘available’ or ‘not available’ instead of checking null values.
