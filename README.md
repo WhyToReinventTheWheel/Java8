@@ -1,5 +1,5 @@
-https://www.tutorialspoint.com/java8/
-Study Notes
+Study Notes: Ref- https://www.tutorialspoint.com/java8/
+
 
 	* Lambda expression	− Adds functional processing capability to Java.
 	* Method references	− Referencing functions by their names instead of invoking them directly.Using functions as parameter.
