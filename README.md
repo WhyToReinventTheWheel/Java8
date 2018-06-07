@@ -1,6 +1,33 @@
 Study Notes: Ref- https://www.tutorialspoint.com/java8/
 
 * http://www.mkyong.com/tutorials/java-8-tutorials/
+* https://vimeo.com/113588389
+* https://fsharpforfunandprofit.com/ddd/
+
+Function as thing
+	Function can take function
+	Function can return a function 
+	
+Function Compoistion 
+	Function and composite another function 
+	without carring anything about function
+	This is abstraction
+	You can't tell is build with smaller function 
+	
+Design 
+	Functions all the way down 
+		
+Types are not classses
+	Set of Valid Inputs 
+	Set of valid Outputs
+	
+	Strive for totality
+		Constraint the Type 
+		Alwasy give defined output for define input
+		
+	Use Static types for domain modelling and documentaion
+		
+		Parameterize all the things
 
 	* Lambda expression	− Adds functional processing capability to Java.
 	* Method references	− Referencing functions by their names instead of invoking them directly.Using functions as parameter.
